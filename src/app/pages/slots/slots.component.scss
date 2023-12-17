@@ -1,0 +1,17 @@
+:host {
+  .category-filter-container {
+    background-color: #1D242C;
+
+    // min-height : i would create variable for it
+    min-height: 52px;
+    overflow: hidden;
+    border-bottom: 1px solid #1f2329;
+  }
+
+  .providers-filter-container {
+    background-color: #1D242C;
+    min-height: 52px;
+    overflow: hidden;
+    border-bottom: 1px solid #1f2329;
+  }
+}

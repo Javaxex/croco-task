@@ -1,0 +1,15 @@
+<ul class="slots-provider-filter">
+  <!-- TODO: use trackby for prop -->
+  <li
+    class="slots-provider-filter__list-item"
+    *ngFor="let provider of providers"
+    [routerLink]="provider.payload"
+    [ngClass]="{ active: isActive(provider) }"
+  >
+    <button class="slots-provider-filter__button">
+      <span class="slots-provider-filter__label">
+        {{ provider.name }}
+      </span>
+    </button>
+  </li>
+</ul>

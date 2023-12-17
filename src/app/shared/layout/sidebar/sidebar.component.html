@@ -1,0 +1,17 @@
+<a href="TODO" class="main-logo">
+  <!-- i would create svg formater component rather than using link to img -->
+  <img alt="logo" ngSrc="https://crocobet.com/assets/icons/logo.svg" width="60" height="46" priority>
+</a>
+
+<ul class="navigation__list">
+  <li class="navigation__item" *ngFor="let item of menuItems" [routerLink]="item.url" routerLinkActive="active">
+    <a [href]="item.url">
+      <div class="navigation__img-container">
+        <img [ngSrc]="'../../../../assets/icons/' + item.logo + '.svg'" [alt]="item.title" width="40" height="40">
+      </div>
+      <span class="navigation__title">
+        {{ item.title }}
+      </span>
+    </a>
+  </li>
+</ul>

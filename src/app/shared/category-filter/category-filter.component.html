@@ -1,0 +1,19 @@
+<ul class="category-filter">
+  <!-- TODO: use trackby for prop -->
+  <li
+    class="category-filter__list-item"
+    *ngFor="let item of items"
+    [routerLink]="item.url"
+    [ngClass]="{ active: isActive(item) }"
+  >
+    <button class="category-filter__button">
+      <span class="category-filter__label">
+        {{ item.name }}
+      </span>
+
+      <span class="category-filter__counter">
+        {{ item.count }}
+      </span>
+    </button>
+  </li>
+</ul>
