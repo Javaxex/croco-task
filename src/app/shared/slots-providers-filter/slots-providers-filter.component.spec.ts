@@ -11,7 +11,7 @@ describe('SlotsProvidersFilterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SlotsProvidersFilterComponent ]
+      imports: [ SlotsProvidersFilterComponent ]
     })
     .compileComponents();
   }));

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../shared/layout/header/header.component';
 import { SidebarComponent } from '../shared/layout/sidebar/sidebar.component';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { SwiperComponent } from '../modules/swiper/swiper.component';
 
 @Component({
@@ -16,12 +16,4 @@ import { SwiperComponent } from '../modules/swiper/swiper.component';
   templateUrl: './core.component.html',
   styleUrls: ['./core.component.scss']
 })
-export class CoreComponent {
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        console.log(event.url);
-      }
-    });
-  }
-}
+export class CoreComponent {}
